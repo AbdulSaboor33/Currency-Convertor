@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converter">
+        <h2>Currency Converter</h2>
+        <form id="currency-form">
+            <div class="input-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="Enter amount" required>
+            </div>
+            <div class="input-group">
+                <label for="from-currency">From:</label>
+                <select id="from-currency">
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="INR">INR - Indian Rupee</option>
+                    <option value="PKR">PKR - Pakistani Rupee</option>
+                    <option value="AUD">AUD - Australian Dollar</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                    <option value="CNY">CNY - Chinese Yuan</option>
+                    <option value="SAR">SAR - Saudi Riyal</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="to-currency">To:</label>
+                <select id="to-currency">
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="INR">INR - Indian Rupee</option>
+                    <option value="PKR">PKR - Pakistani Rupee</option>
+                    <option value="AUD">AUD - Australian Dollar</option>
+                    <option value="CAD">CAD - Canadian Dollar</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                    <option value="CNY">CNY - Chinese Yuan</option>
+                    <option value="SAR">SAR - Saudi Riyal</option>
+                </select>
+            </div>
+            <button type="button" onclick="convertCurrency()">Convert</button>
+        </form>
+        <div class="result" id="result">
+            <!-- The converted amount will be displayed here -->
+        </div>
+    </div>
+    <script src="currency.js"></script>
+</body>
+</html>
